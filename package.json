@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-flashalpha",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "FlashAlpha MCP — wraps the FlashAlpha options-exposure analytics API (lab.flashalpha.com).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-flashalpha": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "flashalpha"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-flashalpha.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/flashalpha",
   "pipeworx": {
-    "sourceHash": "v1-32df7d3a902d8ac7bc886f36e2f7a190676386a6afea75603e51e433ebfee0e5",
-    "sourceCommit": "722087a9bda73f85942e8f6bbfd598544cb0d490"
+    "mode": "gateway",
+    "slug": "flashalpha",
+    "gatewaySlug": "flashalpha",
+    "sourceHash": "v1-777b3478cab755fd0f9a4202145a67eb57212870d4454b09b2bb374cf6942165",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }
