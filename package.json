@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-flashalpha",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "FlashAlpha MCP — wraps the FlashAlpha options-exposure analytics API (lab.flashalpha.com).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "flashalpha",
     "gatewaySlug": "flashalpha",
-    "sourceHash": "v1-777b3478cab755fd0f9a4202145a67eb57212870d4454b09b2bb374cf6942165",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-74732e1352772e147f4055f6bda8f4610b4d2dec189b6531b4bbe4391b6365d5",
+    "sourceCommit": "d35e32c1ffe988e24d391dedb35666387fd2b3d6"
   }
 }
